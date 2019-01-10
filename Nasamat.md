@@ -4,6 +4,23 @@
 #Nasamat Android App developed in Java on Android Studio that displays nearby places with details 
 #(distance, rating, is open, phone, photos ) using threads,  location,
 #Rest API with Json, design patterns and other libraries for UI/UX: Picasso, Flowing-Drawer, Swipy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 package com.amr.nearbyopen;
 
 import android.Manifest;
@@ -71,15 +88,17 @@ import com.jaredrummler.materialspinner.MaterialSpinner;
 import com.mxn.soul.flowingdrawer_core.ElasticDrawer;
 import com.mxn.soul.flowingdrawer_core.FlowingDrawer;
 import com.xw.repo.BubbleSeekBar;
-
-
 import io.fabric.sdk.android.Fabric;
 import java.util.ArrayList;
 import java.util.Random;
-
 import static android.view.inputmethod.EditorInfo.IME_ACTION_DONE;
 import static com.amr.nearbyopen.PlacesNeraby.PalacAdapter.MY_PERMISSIONS_REQUEST_READ_CONTACTS;
 import static com.google.android.gms.location.LocationServices.*;
+
+
+
+
+
 
 public class MainActivity extends Activity implements PlacesDataSource.OnPlacesArrivedListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener, NavigationView.OnNavigationItemSelectedListener {
     private static final int GAS_STATION_COVER_PHOTO =6 ;
