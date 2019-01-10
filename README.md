@@ -1,6 +1,5 @@
 # Nasamat
 #this is the Main of my App , you can find it on google paly store
-# https://play.google.com/store/apps/details?id=com.amr.nearbyopen
 #Nasamat Android App developed in Java on Android Studio that displays nearby places with details 
 #(distance, rating, is open, phone, photos ) using threads,  location,
 #Rest API with Json, design patterns and other libraries for UI/UX: Picasso, Flowing-Drawer, Swipy
@@ -13,16 +12,7 @@
 
 
 
-
-
-
-
-
-
-
-
 #package com.amr.nearbyopen;
-#
 #import android.Manifest;
 #import android.annotation.SuppressLint;
 #import android.app.Activity;
@@ -74,7 +64,6 @@
 #import android.widget.TextView;
 #import android.widget.Toast;
 #import android.widget.VideoView;
-#
 #import com.amr.nearbyopen.PlacesNeraby.PalacAdapter;
 #import com.amr.nearbyopen.PlacesNeraby.Place;
 #import com.amr.nearbyopen.PlacesNeraby.PlacesDataSource;
@@ -94,59 +83,53 @@
 #import static android.view.inputmethod.EditorInfo.IME_ACTION_DONE;
 #import static com.amr.nearbyopen.PlacesNeraby.PalacAdapter.MY_PERMISSIONS_REQUEST_READ_CONTACTS;
 #import static com.google.android.gms.location.LocationServices.*;
-#
-#
-#
-#
-#
-#
-#public class MainActivity extends Activity implements PlacesDataSource.OnPlacesArrivedListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener, NavigationView.OnNavigationItemSelectedListener {
-#    private static final int GAS_STATION_COVER_PHOTO =6 ;
-#    ImageView mImageMain;
-#    private final static int AROUND_ME_COVER_PHOTO = 0;
-#    private final static int RESTURANT_COVER_PHOTO = 2;
-#    private final static int COFE_SHOP_COVER_PHOTO = 3;
-#    private final static int SUPERMARKET_COVER_PHOTO = 4;
-#    private final static int BAKERY_COVER_PHOTO = 1;
-#    private final static int PARK_COVER_PHOTO = 5;
-#    public static int LAST_COVER_PHOTO = 1;
-#    EditText mSearch;
-#    SwipeRefreshLayout mSwipeContainer;
-#    public static ObjectsHolder ob = new ObjectsHolder();
-#    ImageView mClose;
-#    private final String LOG_TAG = "LaurenceTestApp";
-#    private GoogleApiClient mGoogleApiClient;
-#    private LocationRequest mLocationRequest;
-#    private ImageView mBtnHome;
-#    private ImageView mBtnFile;
-#    private ImageView mCategory;
-#    private ImageView mBtnClos;
-#    private VideoView mVideoview;
-#    private TextView mErrorText;
-#    private Rect mRect = new Rect();
-#    MaterialSpinner mSpinnerAroundMe;
-#    MaterialSpinner mSpinnerResturant;
-#    MaterialSpinner mSpinner3;
-#    MaterialSpinner mSpinnerSuperMarket;
-#    MaterialSpinner mSpinnerBakery;
-#    LinearLayout mLinear_around_me;
-#    LinearLayout mLinear_resturant;
-#    LinearLayout mLinear_supermarket;
-#    LinearLayout mLinear_bakery;
-#    String hours = "";
-#    FlowingDrawer mDrawer;
-#    AlertDialog.Builder builder;
-#    int b = 0;
-#    Dialog dialog;
-#    ImageView mTopList;
-#    String str = "";
-#    ImageView img, contact;
-#    //ImageView mmm;
-#    final Context context = this;
-#    public static int a = 0;
-#    RecyclerView rvPalaces;
-#    private static final int RC_REQUEST_LOCATION = 1;
-#    private Location location;
+#public class MainActivity extends Activity implements PlacesDataSource.OnPlacesArrivedListener, GoogleApiClient.ConnectionCallbacks, #GoogleApiClient.OnConnectionFailedListener, LocationListener, NavigationView.OnNavigationItemSelectedListener {
+#private static final int GAS_STATION_COVER_PHOTO =6 ;
+#ImageView mImageMain;
+#private final static int AROUND_ME_COVER_PHOTO = 0;
+#private final static int RESTURANT_COVER_PHOTO = 2;
+#private final static int COFE_SHOP_COVER_PHOTO = 3;
+#private final static int SUPERMARKET_COVER_PHOTO = 4;
+#private final static int BAKERY_COVER_PHOTO = 1;
+#private final static int PARK_COVER_PHOTO = 5;
+#public static int LAST_COVER_PHOTO = 1;
+#EditText mSearch;
+#SwipeRefreshLayout mSwipeContainer;
+#public static ObjectsHolder ob = new ObjectsHolder();
+#ImageView mClose;
+#private final String LOG_TAG = "LaurenceTestApp";
+#private GoogleApiClient mGoogleApiClient;
+#private LocationRequest mLocationRequest;
+#private ImageView mBtnHome;
+#private ImageView mBtnFile;
+#private ImageView mCategory;
+#private ImageView mBtnClos;
+#private VideoView mVideoview;
+#private TextView mErrorText;
+#private Rect mRect = new Rect();
+#MaterialSpinner mSpinnerAroundMe;
+#MaterialSpinner mSpinnerResturant;
+#MaterialSpinner mSpinner3;
+#MaterialSpinner mSpinnerSuperMarket;
+#MaterialSpinner mSpinnerBakery;
+#LinearLayout mLinear_around_me;
+#LinearLayout mLinear_resturant;
+#LinearLayout mLinear_supermarket;
+#LinearLayout mLinear_bakery;
+#String hours = "";
+#FlowingDrawer mDrawer;
+#AlertDialog.Builder builder;
+#int b = 0;
+#Dialog dialog;
+#ImageView mTopList;
+#String str = "";
+#ImageView img, contact;
+#//ImageView mmm;
+#final Context context = this;
+#public static int a = 0;
+#RecyclerView rvPalaces;
+#private static final int RC_REQUEST_LOCATION = 1;
+#private Location location;
 
     public String getStr() {
 
