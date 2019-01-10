@@ -1,6 +1,6 @@
 # Nasamat
 #this is the Main of my App , you can find it on google paly store
-
+# https://play.google.com/store/apps/details?id=com.amr.nearbyopen
 #Nasamat Android App developed in Java on Android Studio that displays nearby places with details 
 #(distance, rating, is open, phone, photos ) using threads,  location,
 #Rest API with Json, design patterns and other libraries for UI/UX: Picasso, Flowing-Drawer, Swipy
