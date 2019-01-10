@@ -1,14 +1,16 @@
 # Nasamat
-# this is the Main of my App , you can find it on google paly store Nasamat Android App developed in Java on Android Studio that displays nearby places with details (distance, rating, is open, phone, photos ) using threads,  location,Rest API with Json, design patterns and other libraries for UI/UX: Picasso, Flowing-Drawer, Swipy
 
 
+# this is the Main of my App ,  Nasamat Android App developed in Java on Android Studio that displays nearby places with details (distance, rating, is open, phone, photos ) using threads,  location,Rest API with Json, design patterns and other libraries for UI/UX: Picasso, Flowing-Drawer, Swipy
+
+#you can find it on google paly store:
 #https://play.google.com/store/apps/details?id=com.amr.nearbyopen
 
 
 
 
 
-
+/*
 #package com.amr.nearbyopen;
 #import android.Manifest;
 #import android.annotation.SuppressLint;
@@ -127,7 +129,7 @@
 #RecyclerView rvPalaces;
 #private static final int RC_REQUEST_LOCATION = 1;
 #private Location location;
-
+*/
     public String getStr() {
 
         return ob.getD();
