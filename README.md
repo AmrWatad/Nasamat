@@ -1,18 +1,21 @@
-#Nasamat
+# Nasamat
 
-#this is the Main of my App,Nasamat Android App developed in Java on Android Studio that displays nearby places with details(distance,rating,is open,phone,photos)using threads,location,Rest API with Json,design patterns and other libraries for UI/UX:Picasso,Flowing-Drawer,Swipy
+#  Android App
+developed in Java on Android Studio that displays nearby places with details(distance,rating,is open,phone,photos)using threads,location,Rest API with Json,design patterns and other libraries for UI/UX:Picasso,Flowing-Drawer,Swipy
 
-#you can find it on google paly store:#https://play.google.com/store/apps/details?id=com.amr.nearbyopen
+# you can find it on google paly store:
+#https://play.google.com/store/apps/details?id=com.amr.nearbyopen
+
+# this is part of the Main of my App,
 
 
-
-import com.mxn.soul.flowingdrawer_core.FlowingDrawer;*
-import com.jaredrummler.materialspinner.MaterialSpinner;*
-import com.google.android.gms.common.api.GoogleApiClient;*
-import io.fabric.sdk.android.Fabric;*
-import static com.google.android.gms.location.LocationServices.*;*
-import com.mxn.soul.flowingdrawer_core.FlowingDrawer;*
-import com.xw.repo.BubbleSeekBar;
+* import com.mxn.soul.flowingdrawer_core.FlowingDrawer;*
+* import com.jaredrummler.materialspinner.MaterialSpinner;*
+* import com.google.android.gms.common.api.GoogleApiClient;*
+* import io.fabric.sdk.android.Fabric;*
+* import static com.google.android.gms.location.LocationServices.*;*
+* import com.mxn.soul.flowingdrawer_core.FlowingDrawer;*
+* import com.xw.repo.BubbleSeekBar;
 
 
 
@@ -26,7 +29,6 @@ public class MainActivity extends Activity implements PlacesDataSource.OnPlacesA
 		Fabric.with(this, new Crashlytics());
 		toastMessageWel();
 
-		try {
 			buildGoogleApiClient();
 			setContentView(R.layout.activity_main);
 			radiosKm();
@@ -39,8 +41,7 @@ public class MainActivity extends Activity implements PlacesDataSource.OnPlacesA
 			mSearch();
 			mClose();
 			setSelected(1);
-		} catch (Exception e) {
-		}
+		
 	}
 
 	public void onPlacesArrived(@Nullable final ArrayList<Place> places, @Nullable final Exception e) {
